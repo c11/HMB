@@ -12,3 +12,5 @@ exportClasses(SummaryHMB)
 exportMethods(getSpec)
 exportMethods(show)
 exportMethods(summary)
+
+export(MethComp)
