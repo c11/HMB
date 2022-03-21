@@ -82,6 +82,6 @@ MethComp <- function(n, SampFr, SampFrlim, EnLargeFactor, TileSide, PixelSize,
                   ylim = ylim);
 
   library("rmarkdown")
-  RMDname = system.file("rmd", "method_report.rmd", package=getPackageName())
+  RMDname = system.file("rmd", "method_report.Rmd", package=getPackageName())
   render(RMDname, params=listData, output_file = output_file, output_format="html_document")
 }
