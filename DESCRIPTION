@@ -15,7 +15,7 @@ LazyData: TRUE
 Imports: Rcpp (>= 0.12.16)
 Depends: methods, stats, R (>= 3.5)
 LinkingTo: Rcpp, RcppArmadillo
-Collate: RcppExports.R helper_functions.R HMB-class.R SummaryHMB-class.R ghmb.R hmb.R
+Collate: RcppExports.R helper_functions.R HMB-class.R SummaryHMB-class.R ghmb.R hmb.R MethComp.R
 RoxygenNote: 7.1.2
 NeedsCompilation: yes
 Packaged: 2018-08-31 15:28:50 UTC; svla0001
