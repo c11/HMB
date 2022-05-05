@@ -52,8 +52,9 @@
 #' ghmb_model = ghmb_nonlin(
 #'   y_S, X_S, X_Sa, Z_Sa, Z_U, Omega_S, Sigma_Sa)
 #' ghmb_model
-#' @references Saarela, S., Holm, S., Healey, S.P., Andersen, H.-E., Petersson, H., Prentius, W., Patterson, P.L., Næsset, E., Gregoire, T.G. & Ståhl, G. (2018). 
-#' Generalized Hierarchical Model-Based Estimation for Aboveground Biomass Assessment Using GEDI and Landsat Data, \emph{Remote Sensing, 10(11),} 1832.
+#' @references Saarela, S., Wästlund, A., Holmström, E., Mensah, A.A., Holm, S., Nilsson, M., Fridman, J. & Ståhl, G. (2020). 
+#' Mapping aboveground biomass and its uncertainty using LiDAR and field data, accounting for tree-level allometric and LiDAR model errors,
+#' \emph{Forest Ecosystems, 7(43),} 1-17.
 
 #' @export
 ghmb_nonlin = function(
