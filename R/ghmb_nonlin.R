@@ -120,8 +120,8 @@ ghmb_nonlin = function(
     h@data$Sigma_Sa)
 
   h@resids = list(
-    SigmaConst = model$sigma,
-    OmegaConst = model$omega
+    SigmaConst = model$sigma2^0.5,
+    OmegaConst = model$omega2^0.5
   )
 
   h@Alpha = model$Alpha
