@@ -56,7 +56,7 @@
 #' Generalized Hierarchical Model-Based Estimation for Aboveground Biomass Assessment Using GEDI and Landsat Data, \emph{Remote Sensing, 10(11),} 1832.
 
 #' @export
-ghmb = function(
+ghmb_nonlin = function(
   y_S,
   X_S,
   X_Sa,
