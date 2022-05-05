@@ -7,6 +7,8 @@ importFrom("stats", "pnorm", "printCoefmat", "qnorm")
 
 export(ghmb)
 export(hmb)
+export(ghmb_nonlin)
+export(hmb_nonlin)
 exportClasses(HMB)
 exportClasses(SummaryHMB)
 exportMethods(getSpec)
