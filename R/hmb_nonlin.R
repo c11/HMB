@@ -82,8 +82,8 @@ hmb_nonlin = function(
     h@data$Z_U)
 
   h@resids = list(
-    sigma2 = model$sigma,
-    omega2 = model$omega
+    sigma = model$sigma2^0.5,
+    omega = model$omega2^0.5
   )
 
   h@Alpha = model$Alpha
