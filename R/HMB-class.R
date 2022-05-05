@@ -21,6 +21,7 @@ setClass(
     BetaCov = 'matrix',
     mu = 'numeric',
     muVar = 'numeric',
+    predict = 'vector',
     resids = 'list'
   )
 )
