@@ -105,7 +105,7 @@ ghmb_nonlin = function(
     X_S = as.matrix(X_S),
     X_Sa = as.matrix(X_Sa),
     Z_Sa = as.matrix(Z_Sa),
-    Z_U = as.matrix(cbind(Z_U),
+    Z_U = as.matrix(Z_U),
     Omega_S = as.matrix(Omega_S),
     Sigma_Sa = as.matrix(Sigma_Sa)
   )
