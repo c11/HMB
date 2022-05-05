@@ -81,15 +81,6 @@ hmb_nonlin = function(
     h@data$Z_Sa,
     h@data$Z_U)
 
-  h@resids = list(
-    sigma = model$sigma2^0.5,
-    omega = model$omega2^0.5
-  )
-
-  h@Alpha = model$Alpha
-  h@AlphaCov = model$AlphaCov
-  h@Beta = model$Beta
-  h@BetaCov = model$BetaCov
   h@mu = model$mu
   h@muVar = model$muVar
   h@predict = model$predict
