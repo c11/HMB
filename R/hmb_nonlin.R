@@ -44,11 +44,9 @@
 #'
 #' hmb_model = hmb_nonlin(y_S, X_S, X_Sa, Z_Sa, Z_U)
 #' hmb_model
-#' @references Saarela, S., Holm, S., Grafström, A., Schnell, S., Næsset, E., Gregoire, T.G., Nelson, R.F. & Ståhl, G. (2016). 
-#' Hierarchical model-based inference for forest inventory utilizing three sources of information, \emph{Annals of Forest Science, 73(4),} 895-910.
-#' 
-#' Saarela, S., Holm, S., Healey, S.P., Andersen, H.-E., Petersson, H., Prentius, W., Patterson, P.L., Næsset, E., Gregoire, T.G. & Ståhl, G. (2018). 
-#' Generalized Hierarchical Model-Based Estimation for Aboveground Biomass Assessment Using GEDI and Landsat Data, \emph{Remote Sensing, 10(11),} 1832.
+#' @references Saarela, S., Wästlund, A., Holmström, E., Mensah, A.A., Holm, S., Nilsson, M., Fridman, J. & Ståhl, G. (2020). 
+#' Mapping aboveground biomass and its uncertainty using LiDAR and field data, accounting for tree-level allometric and LiDAR model errors,
+#' \emph{Forest Ecosystems, 7(43),} 1-17.
 
 #' @export
 hmb_nonlin = function(
