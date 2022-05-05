@@ -94,6 +94,7 @@ hmb = function(
   h@BetaCov = model$BetaCov
   h@mu = model$mu
   h@muVar = model$muVar
+  h@predict = model$predict
 
   return(h)
 }
