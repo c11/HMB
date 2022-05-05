@@ -41,7 +41,7 @@ Rcpp::List cpp_ghmb(
   const vec Alpha = G_mat_Z * X_Sa * Beta;
 
   // Calculate variance-constants
-  double omega2, sigma2, Q;
+  double omega2, sigma2;
 
   // Calculate omega_const
   {
