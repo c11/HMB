@@ -17,13 +17,13 @@ setClass(
   )
 )
 
-# #' Method showHMB
+# #' Method show
 # #'
 # #' Display model outputs
 # #'
-# #' @name showHMB
-# #' @rdname showHMB-methods
-# #' @exportMethod showHMB
+# #' @name show
+# #' @rdname show-methods
+# #' @exportMethod show
 # #' @param obj Object of class SummaryHMB
 # #' @examples
 # #' pop_U  = sample(nrow(HMB_data), 20000)
@@ -37,20 +37,20 @@ setClass(
 # #' Z_U    = HMB_data[pop_U, c("B20", "B30", "B50")]
 # #'
 # #' hmb_model = hmb(y_S, X_S, X_Sa, Z_Sa, Z_U)
-# #' showHMB(hmb_model)
+# #' show(hmb_model)
 # setGeneric(
-#   name = "showHMB",
-#   def = function(obj) standardGeneric("showHMB")
+#   name = "show",
+#   def = function(obj) standardGeneric("show")
 # )
 
-#' Method showHMB
+#' Method show
 #'
 #' Display model summary properties
 #'
-#' @name showHMB
-#' @rdname showHMB-methods
-#' @exportMethod showHMB
-#' @aliases showHMB, SummaryHMB-method
+#' @name show
+#' @rdname show-methods
+#' @exportMethod show
+#' @aliases show,SummaryHMB-method
 #' @examples
 #' pop_U  = sample(nrow(HMB_data), 20000)
 #' pop_Sa = sample(pop_U, 5000)
@@ -63,10 +63,10 @@ setClass(
 #' Z_U    = HMB_data[pop_U, c("B20", "B30", "B50")]
 #'
 #' hmb_model = hmb(y_S, X_S, X_Sa, Z_Sa, Z_U)
-#' showHMB(summaryHMB(hmb_model))
+#' show(summary(hmb_model))
 setMethod(
-  'showHMB',
-  'SummaryHMB',
+  'show',
+  'Summary',
   definition = function(object) {
     digits = max(3L, getOption('digits') - 3L)
     cat('Summary for ', object@method, '\n', sep = '')
