@@ -5,7 +5,7 @@
 #' @name HMB-class
 #' @rdname HMB-class
 #' @exportClass HMB
-#' @seealso \code{\link{hmb}}, \code{\link{ghmb}}, \code{\link{tsmb}}, \code{\link{gtsmb}}
+#' @seealso \code{\link{hmb}}, \code{\link{ghmb}}, \code{\link{hmb_nonlin}}, \code{\link{ghmb_nonlin}}
 setClass(
   'HMB',
   slots = c(
@@ -36,11 +36,9 @@ setValidity(
     # Check if method is correct
     if (!(method %in% c(
       'HMB',
-      'TSMB',
-      'GHMB',
-      'GTSMB'
+      'GHMB'
     ))) {
-      msg = "Method is not of correct type, either SMB or TSMB."
+      msg = "Method is not of correct type."
       errors = c(errors, msg)
     }
 
