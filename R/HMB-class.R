@@ -58,7 +58,7 @@ setValidity(
 #' Get model specifications of HMB-class object
 #'
 #' @name getSpecHMB
-#' @rdname getSpec-methods
+#' @rdname getSpecHMB-methods
 #' @exportMethod getSpecHMB
 #' @param obj Object of class HMB
 #' @return A list containing the estimated parameters, together with model arguments
@@ -116,7 +116,7 @@ setMethod(
 ## ' Display model outputs
 ## '
 ## ' @name showHMB
-## ' @rdname show-methods
+## ' @rdname showHMB-methods
 ## ' @exportMethod showHMB
 ## ' @param object Object of class HMB
 ## ' @examples
@@ -143,7 +143,7 @@ setMethod(
 #' Display model outputs
 #'
 #' @name showHMB
-#' @rdname show-methods
+#' @rdname showHMB-methods
 #' @exportMethod showHMB
 #' @param object Object of class HMB
 #' @aliases showHMB, HMB-method
@@ -175,7 +175,7 @@ setMethod(
 #'Summary of HMB model
 #'
 #' @name summaryHMB
-#' @rdname summary-methods
+#' @rdname summaryHMB-methods
 #' @exportMethod summaryHMB
 #' @param obj Object of class HMB
 #' @return Summary of HMB model.
@@ -202,7 +202,7 @@ setGeneric(
   def = function(obj) standardGeneric("summaryHMB")
 )
 
-#' @rdname summary-methods
+#' @rdname summaryHMB-methods
 setMethod(
   "summaryHMB",
   "HMB",
