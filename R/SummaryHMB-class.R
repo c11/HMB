@@ -40,7 +40,7 @@ setClass(
 # #' showHMB(hmb_model)
 # setGeneric(
 #   name = "showHMB",
-#   def = function(obj) standardGeneric("show")
+#   def = function(obj) standardGeneric("showHMB")
 # )
 
 #' Method showHMB
