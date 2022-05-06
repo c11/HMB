@@ -55,13 +55,13 @@ setValidity(
 
 
 
-#' Method getSpec
+#' Method getSpecHMB
 #'
 #' Get model specifications of HMB-class object
 #'
-#' @name getSpec
+#' @name getSpecHMB
 #' @rdname getSpec-methods
-#' @exportMethod getSpec
+#' @exportMethod getSpecHMB
 #' @param obj Object of class HMB
 #' @return A list containing the estimated parameters, together with model arguments
 #' @examples
@@ -76,15 +76,15 @@ setValidity(
 #' Z_U    = HMB_data[pop_U, c("B20", "B30", "B50")]
 #'
 #' hmb_model = hmb(y_S, X_S, X_Sa, Z_Sa, Z_U)
-#' getSpec(hmb_model)
+#' getSpecHMB(hmb_model)
 setGeneric(
-  name = "getSpec",
-  def = function(obj) standardGeneric("getSpec")
+  name = "getSpecHMB",
+  def = function(obj) standardGeneric("getSpecHMB")
 )
 
 #' @rdname getSpec-methods
 setMethod(
-  "getSpec",
+  "getSpecHMB",
   "HMB",
   definition = function(obj) {
     validObject(obj)
@@ -113,13 +113,13 @@ setMethod(
 )
 
 
-## ' Method show
+## ' Method showHMB
 ## '
 ## ' Display model outputs
 ## '
-## ' @name show
+## ' @name showHMB
 ## ' @rdname show-methods
-## ' @exportMethod show
+## ' @exportMethod showHMB
 ## ' @param object Object of class HMB
 ## ' @examples
 ## ' pop_U  = sample(nrow(HMB_data), 20000)
@@ -133,20 +133,20 @@ setMethod(
 ## ' Z_U    = HMB_data[pop_U, c("B20", "B30", "B50")]
 ## '
 ## ' hmb_model = hmb(y_S, X_S, X_Sa, Z_Sa, Z_U)
-## ' show(hmb_model)
+## ' showHMB(hmb_model)
 ##
 ## setGeneric(
-##   name = "show",
-##   def = function(object) standardGeneric("show")
+##   name = "showHMB",
+##   def = function(object) standardGeneric("showHMB")
 ## )
 
-#' Method show
+#' Method showHMB
 #'
 #' Display model outputs
 #'
-#' @name show
+#' @name showHMB
 #' @rdname show-methods
-#' @exportMethod show
+#' @exportMethod showHMB
 #' @param object Object of class HMB
 #' @aliases show,HMB-method
 #' @examples
@@ -161,9 +161,9 @@ setMethod(
 #' Z_U    = HMB_data[pop_U, c("B20", "B30", "B50")]
 #'
 #' hmb_model = hmb(y_S, X_S, X_Sa, Z_Sa, Z_U)
-#' show(hmb_model)
+#' showHMB(hmb_model)
 setMethod(
-  "show",
+  "showHMB",
   "HMB",
   definition = function(object) {
     cat('Estimated population mean:', object@mu, '\n')
@@ -172,13 +172,13 @@ setMethod(
 )
 
 
-#' Method summary
+#' Method summaryHMB
 #' 
 #'Summary of HMB model
 #'
-#' @name summary
+#' @name summaryHMB
 #' @rdname summary-methods
-#' @exportMethod summary
+#' @exportMethod summaryHMB
 #' @param obj Object of class HMB
 #' @return Summary of HMB model.
 #' @examples
@@ -198,15 +198,15 @@ setMethod(
 #' })) * 1
 #'
 #' hmb_model = hmb(y_S, X_S, X_Sa, Z_Sa, Z_U)
-#' summary(hmb_model)
+#' summaryHMB(hmb_model)
 setGeneric(
-  name = "summary",
-  def = function(obj) standardGeneric("summary")
+  name = "summaryHMB",
+  def = function(obj) standardGeneric("summaryHMB")
 )
 
 #' @rdname summary-methods
 setMethod(
-  "summary",
+  "summaryHMB",
   "HMB",
   definition = function(obj) {
     validObject(obj)
