@@ -66,7 +66,7 @@ setClass(
 #' show(summary(hmb_model))
 setMethod(
   'show',
-  'Summary',
+  'SummaryHMB',
   definition = function(object) {
     digits = max(3L, getOption('digits') - 3L)
     cat('Summary for ', object@method, '\n', sep = '')
