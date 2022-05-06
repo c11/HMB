@@ -209,7 +209,7 @@ setMethod(
   definition = function(obj) {
     validObject(obj)
 
-    res = new('Summary')
+    res = new('SummaryHMB')
     res@method = obj@method
 
     res@samples = matrix(
