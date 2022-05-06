@@ -22,7 +22,7 @@ setClass(
 # #' Display model outputs
 # #'
 # #' @name showHMB
-# #' @rdname show-methods
+# #' @rdname showHMB-methods
 # #' @exportMethod showHMB
 # #' @param obj Object of class SummaryHMB
 # #' @examples
@@ -48,7 +48,7 @@ setClass(
 #' Display model summary properties
 #'
 #' @name showHMB
-#' @rdname show-methods
+#' @rdname showHMB-methods
 #' @exportMethod showHMB
 #' @aliases showHMB, SummaryHMB-method
 #' @examples
