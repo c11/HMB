@@ -77,7 +77,7 @@ setValidity(
 #' getSpecHMB(hmb_model)
 setGeneric(
   name = "getSpecHMB",
-  def = function(obj) standardGeneric("getSpec")
+  def = function(obj) standardGeneric("getSpecHMB")
 )
 
 #' @rdname getSpec-methods
@@ -135,7 +135,7 @@ setMethod(
 ##
 ## setGeneric(
 ##   name = "showHMB",
-##   def = function(object) standardGeneric("show")
+##   def = function(object) standardGeneric("showHMB")
 ## )
 
 #' Method showHMB
@@ -199,7 +199,7 @@ setMethod(
 #' summaryHMB(hmb_model)
 setGeneric(
   name = "summaryHMB",
-  def = function(obj) standardGeneric("summary")
+  def = function(obj) standardGeneric("summaryHMB")
 )
 
 #' @rdname summaryHMB-methods
