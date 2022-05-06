@@ -146,7 +146,7 @@ setMethod(
 #' @rdname show-methods
 #' @exportMethod showHMB
 #' @param object Object of class HMB
-#' @aliases show,HMB-method
+#' @aliases showHMB, HMB-method
 #' @examples
 #' pop_U  = sample(nrow(HMB_data), 20000)
 #' pop_Sa = sample(pop_U, 5000)
