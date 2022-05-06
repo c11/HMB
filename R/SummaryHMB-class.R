@@ -17,7 +17,7 @@ setClass(
   )
 )
 
-# #' Method show
+# #' Method showHMB
 # #'
 # #' Display model outputs
 # #'
