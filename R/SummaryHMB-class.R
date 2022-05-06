@@ -23,7 +23,7 @@ setClass(
 # #'
 # #' @name showHMB
 # #' @rdname show-methods
-# #' @exportMethod show
+# #' @exportMethod showHMB
 # #' @param obj Object of class SummaryHMB
 # #' @examples
 # #' pop_U  = sample(nrow(HMB_data), 20000)
@@ -49,8 +49,8 @@ setClass(
 #'
 #' @name showHMB
 #' @rdname show-methods
-#' @exportMethod show
-#' @aliases show,SummaryHMB-method
+#' @exportMethod showHMB
+#' @aliases showHMB, SummaryHMB-method
 #' @examples
 #' pop_U  = sample(nrow(HMB_data), 20000)
 #' pop_Sa = sample(pop_U, 5000)
