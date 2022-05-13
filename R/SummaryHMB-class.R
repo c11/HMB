@@ -38,9 +38,10 @@ setClass(
 # #'
 # #' hmb_model = hmb(y_S, X_S, X_Sa, Z_Sa, Z_U)
 # #' show(hmb_model)
+
 # setGeneric(
 #   name = "show",
-#   def = function(obj) standardGeneric("show")
+#   def = function(object) standardGeneric("show")
 # )
 
 #' Method show

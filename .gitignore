@@ -3,8 +3,9 @@
 .Rhistory
 .RData
 .Ruserdata
-src/*.o
-src/*.so
-src/*.dll
+*.o
+*.so
+*.dll
+*.Rd
 
 test
