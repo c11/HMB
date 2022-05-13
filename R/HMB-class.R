@@ -5,7 +5,7 @@
 #' @name HMB-class
 #' @rdname HMB-class
 #' @exportClass HMB
-#' @seealso \code{\link{hmb}}, \code{\link{ghmb}}, \code{\link{tsmb}}, \code{\link{gtsmb}}
+#' @seealso \code{\link{hmb}}, \code{\link{ghmb}}, \code{\link{hmb_nonlin}}, \code{\link{ghmb_nonlin}}
 setClass(
   'HMB',
   slots = c(
@@ -21,6 +21,7 @@ setClass(
     BetaCov = 'matrix',
     mu = 'numeric',
     muVar = 'numeric',
+    predict = 'vector',
     resids = 'list'
   )
 )
@@ -35,11 +36,9 @@ setValidity(
     # Check if method is correct
     if (!(method %in% c(
       'HMB',
-      'TSMB',
-      'GHMB',
-      'GTSMB'
+      'GHMB'
     ))) {
-      msg = "Method is not of correct type, either SMB or TSMB."
+      msg = "Method is not of correct type."
       errors = c(errors, msg)
     }
 
@@ -147,7 +146,7 @@ setMethod(
 #' @rdname show-methods
 #' @exportMethod show
 #' @param object Object of class HMB
-#' @aliases show,HMB-method
+#' @aliases show, HMB-method
 #' @examples
 #' pop_U  = sample(nrow(HMB_data), 20000)
 #' pop_Sa = sample(pop_U, 5000)

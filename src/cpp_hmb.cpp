@@ -53,6 +53,7 @@ Rcpp::List cpp_hmb(
   arma::vec jota = one/Z_U.n_rows;
   const double muVar = as_scalar((jota.t()*Z_U*AlphaCov*Z_U.t()*jota));
   const double mu = as_scalar((jota.t()*Z_U*Alpha));
+  const vec predict = Z_U*Alpha;
 
   List ret;
   ret["Beta"] = Beta;
@@ -63,5 +64,6 @@ Rcpp::List cpp_hmb(
   ret["sigma2"] = sigma2;
   ret["mu"] = mu;
   ret["muVar"] = muVar;
+  ret["predict"] = predict;
   return ret;
 }

@@ -2,20 +2,20 @@ Package: HMB
 Type: Package
 Title: Hierarchical Model-Based Estimation Approach
 Version: 2.0
-Date: 2022-02-02
+Date: 2022-05-08
 Authors@R: c(
               person("Svetlana", "Saarela", role = c("cre", "aut"), email = "admin@svetlanasaarela.com"),
               person("Zhiqiang", "Yang", role = "aut", email='zhiqiangyang@fs.fed.us'),
               person("Göran", "Ståhl", role = "aut", email='goran.stahl@slu.se')
             )
-Description: For estimation of a variable of interest using two sources of auxiliary information available in a nested structure. For reference see Saarela et al. (2016)<doi:10.1007/s13595-016-0590-1> and Saarela et al. (2018) <doi:10.3390/rs10111832>. 
+Description: For estimation of a variable of interest using two sources of auxiliary information available in a nested structure. For reference see Saarela et al. (2016)<doi:10.1007/s13595-016-0590-1>, Saarela et al. (2018)<doi:10.3390/rs10111832> and Saarela et al. (2020)<doi:10.1186/s40663-020-00245-0>. 
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: TRUE
 Imports: Rcpp (>= 0.12.16)
 Depends: methods, stats, R (>= 3.5)
 LinkingTo: Rcpp, RcppArmadillo
-Collate: RcppExports.R helper_functions.R HMB-class.R SummaryHMB-class.R ghmb.R hmb.R MethComp.R
+Collate: RcppExports.R helper_functions.R HMB-class.R SummaryHMB-class.R ghmb.R hmb.R ghmb_nonlin.R hmb_nonlin.R MethComp.R
 RoxygenNote: 7.1.2
 NeedsCompilation: yes
 Packaged: 2018-08-31 15:28:50 UTC; svla0001
